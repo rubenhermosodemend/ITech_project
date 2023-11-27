@@ -4,27 +4,27 @@ Página web de la empresa ITech
 
 División de la web:
 
-  -Página principal donde se muestra algo de cada apartado de la empresa
+ * -Página principal donde se muestra algo de cada apartado de la empresa
   
-  -Login
+ * -Login
   
-  -Sing in
+ * -Sing in
   
-  -Página principal de la tienda:
+ * -Página principal de la tienda
   
-    -Posible automatización del producto
+ *   -Posible automatización del producto
     
-  -Página principal de los cursos:
+ * -Página principal de los cursos:
   
-    -Empresas
-    -Cursos generales
-    -Cursos para centros educativos
+  *  -Empresas
+   * -Cursos generales
+   * -Cursos para centros educativos
     
-  -Página de los boxes
-    -Reserva
-    -Localizaciones
+*  -Página de los boxes
+ *   -Reserva
+  *  -Localizaciones
     
-  -Página de contacto
+ * -Página de contacto
   
-  -Página de soporte
+*  -Página de soporte
   
