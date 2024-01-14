@@ -17,97 +17,96 @@
 
 <body>
 
-  <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
-      <div class="container-fluid lh-5">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active icon-link-hover home" aria-current="page" href="#"
-                onclick="showSection('index')">
-                <p class="navbar-brand fs-1 navbar-brand my-auto min-width"><img
-                    src="./assets/images/Itech_white-transformed.png" alt="Logo" width="150" height="50"
-                    class="d-inline-block align-text-top ">
-                </p>
-              </a>
+        <div class="container-fluid lh-5">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active icon-link-hover home" aria-current="page" href="#"
+                  onclick="showSection('index')">
+                  <p class="navbar-brand fs-1 navbar-brand my-auto min-width"><img
+                      src="./assets/images/Itech_white-transformed.png" alt="Logo" width="150" height="50"
+                      class="d-inline-block align-text-top ">
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item dropdown p-4">
+                <a class="nav-link dropdown-toggle" href="#" onclick="showSection('tienda')" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Tienda
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" id="alllink" href="#">Todos</a></li>
+                  <li><a class="dropdown-item" id="processorlink" href="#">Procesadores</a></li>
+                  <li><a class="dropdown-item" id="graphiclink" href="#">Tarjetas gráficas</a></li>
+                  <li><a class="dropdown-item" id="ramlink" href="#">RAM</a></li>
+                  <li><a class="dropdown-item" id="coolinglink" href="#">Refrigeración</a></li>
+                  <li><a class="dropdown-item" id="storagelink" href="#">Almacenamiento</a></li>
+                  <li><a class="dropdown-item" id="chasislink" href="#">Chasis</a></li>
+                  <li><a class="dropdown-item" id="powerlink" href="#">Fuentes de alimentación</a></li>
+                  <li><a class="dropdown-item" id="screenlink" href="#">Monitores</a></li>
+                  <li><a class="dropdown-item" id="peripheralink" href="#">Periféricos</a></li>
+                  <li><a class="dropdown-item" id="motherboardlink" href="#">Placas Base</a></li>
+                </ul>
+  
+              </li>
+              <li class="nav-item p-4  ">
+                <a class="nav-link icon-link-hover cursos fnavbar" href="#" onclick="showSection('courses')">Cursos</a>
+              </li>
+              <li class="nav-item p-4  ">
+                <a class="nav-link icon-link-hover boxes fnavbar" href="#" onclick="showSection('boxes')">Boxes</a>
+              </li>
+              <li class="nav-item p-4  ">
+                <a class="nav-link icon-link-hover contact fnavbar" href="#"
+                  onclick="showSection('contact')">Contáctanos</a>
+              </li>
+              <li class="nav-item p-4  ">
+                <a class="nav-link icon-link-hover about_us" href="#" onclick="showSection('about_ourselves')">Sobre
+                  nosotros</a>
+              </li>
+              <li class="nav-item p-4  ">
+                <a class="nav-link icon-link-hover login" href="#" onclick="showSection('login')">Log in</a>
+              </li>
+              <li class="nav-item p-4  ">
+                <a class="nav-link icon-link-hover signin" href="#" onclick="showSection('sign_in')">Sign in</a>
+              </li>
+              <li class="nav-item p-4">
+                <div class="btn-group px-2">
+                    <button class="btn btn-secondary btn-lg dropdown-toggle btn-sm" id="reductedbutton"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./assets/images/carrito.png" alt="carrito" width="25" height="25">
+                    </button>
+                    <ul class="dropdown-menu" id="carrito">
+                    </ul>
+                </div>
             </li>
-            <li class="nav-item dropdown p-4">
-              <a class="nav-link dropdown-toggle" href="#" onclick="showSection('tienda')" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Tienda
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" id="alllink" href="#">Todos</a></li>
-                <li><a class="dropdown-item" id="processorlink" href="#">Procesadores</a></li>
-                <li><a class="dropdown-item" id="graphiclink" href="#">Tarjetas gráficas</a></li>
-                <li><a class="dropdown-item" id="ramlink" href="#">RAM</a></li>
-                <li><a class="dropdown-item" id="coolinglink" href="#">Refrigeración</a></li>
-                <li><a class="dropdown-item" id="storagelink" href="#">Almacenamiento</a></li>
-                <li><a class="dropdown-item" id="chasislink" href="#">Chasis</a></li>
-                <li><a class="dropdown-item" id="powerlink" href="#">Fuentes de alimentación</a></li>
-                <li><a class="dropdown-item" id="screenlink" href="#">Monitores</a></li>
-                <li><a class="dropdown-item" id="peripheralink" href="#">Periféricos</a></li>
-                <li><a class="dropdown-item" id="motherboardlink" href="#">Placas Base</a></li>
-              </ul>
-
-            </li>
-            <li class="nav-item p-4  ">
-              <a class="nav-link icon-link-hover cursos fnavbar" href="#" onclick="showSection('courses')">Cursos</a>
-            </li>
-            <li class="nav-item p-4  ">
-              <a class="nav-link icon-link-hover boxes fnavbar" href="#" onclick="showSection('boxes')">Boxes</a>
-            </li>
-            <li class="nav-item p-4  ">
-              <a class="nav-link icon-link-hover contact fnavbar" href="#"
-                onclick="showSection('contact')">Contáctanos</a>
-            </li>
-            <li class="nav-item p-4  ">
-              <a class="nav-link icon-link-hover about_us" href="#" onclick="showSection('about_ourselves')">Sobre
-                nosotros</a>
-            </li>
-            <li class="nav-item p-4  ">
-              <a class="nav-link icon-link-hover login" href="#" onclick="showSection('login')">Log in</a>
-            </li>
-            <li class="nav-item p-4  ">
-              <a class="nav-link icon-link-hover signin" href="#" onclick="showSection('sign_in')">Sign in</a>
-            </li>
-            <li class="nav-item p-4">
-              <div class="btn-group px-2">
-                  <button class="btn btn-secondary btn-lg dropdown-toggle btn-sm" id="reductedbutton"
-                      type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="./assets/images/carrito.png" alt="carrito" width="25" height="25">
-                  </button>
-                  <ul class="dropdown-menu" id="carrito">
-                  </ul>
-              </div>
-          </li>
-          </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-      <a href="index-ingles.html"><img src="./assets/images/ingles.avif" alt="Ingles" width="40" height="40"></a>
-    </nav>
-  </header>
+        <a href="index.html"><img src="./assets/images/españa.png" alt="España" width="40" height="40"></a>
+      </nav>
+    </header>
 
   <main>
     <section id="index" style="display: none;">
       <div class="container index_store">
         <div class="row p-3 ">
           <div class=" col-lg-12 my-col-h col-md-12 col-sm-12">
-            <p class="h2 section">Nuevos productos</p>
+            <p class="h2 section">New products</p>
             <div class="row p-9">
               <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="card my-auto" style="width: 18rem;">
                   <img src="./assets/images/grafica_index.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title ftitulos"><b>Gráficas</b></h5>
+                    <h5 class="card-title ftitulos"><b></b></h5>
                     <p class="card-text fcuerpo">Some quick example text to build on the card title and make up the bulk
                       of the
                       card's content.</p>
-                    <a href="#" class="btn btn-primary">Ver productos</a>
+                    <a href="#" class="btn btn-primary">See products</a>
                   </div>
                 </div>
               </div>
@@ -115,11 +114,11 @@
                 <div class="card my-auto" style="width: 18rem;">
                   <img src="./assets/images/chasis_index.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title ftitulos"><b>Chásis</b></h5>
+                    <h5 class="card-title ftitulos"><b>Cases</b></h5>
                     <p class="card-text fcuerpo">Some quick example text to build on the card title and make up the bulk
                       of the
                       card's content.</p>
-                    <a href="#" class="btn btn-primary">Ver productos</a>
+                    <a href="#" class="btn btn-primary">See products</a>
                   </div>
                 </div>
               </div>
@@ -127,11 +126,11 @@
                 <div class="card my-auto" style="width: 18rem;">
                   <img src="./assets/images/cpu_index.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title ftitulos"><b>Procesadores</b></h5>
+                    <h5 class="card-title ftitulos"><b>Processors</b></h5>
                     <p class="card-text fcuerpo">Some quick example text to build on the card title and make up the bulk
                       of the
                       card's content.</p>
-                    <a href="#" class="btn btn-primary">Ver productos</a>
+                    <a href="#" class="btn btn-primary">See products</a>
                   </div>
                 </div>
               </div>
@@ -143,7 +142,7 @@
                     <p class="card-text fcuerpo">Some quick example text to build on the card title and make up the bulk
                       of the
                       card's content.</p>
-                    <a href="#" class="btn btn-primary">Ver productos</a>
+                    <a href="#" class="btn btn-primary">See products</a>
                   </div>
                 </div>
               </div>
@@ -152,7 +151,7 @@
         </div>
         <div class="container bg-light">
           <div class=" col-lg-8 my-col-h col-md-12 col-sm-12" style="margin: 0 auto;">
-            <p class="h2 section">Nuestros cursos</p>
+            <p class="h2 section">Our courses</p>
             <div id="carouselExampleIndicators" class="carousel slide" width="80%" height="80%">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -193,12 +192,10 @@
               <div class="row">
                 <div class="col-lg-8">
                   <p>
-                    En ITech, estamos comprometidos en proporcionar un espacio único y especializado para
-                    todos los entusiastas de la tecnología y profesionales de la informática. Nos enorgullece ofrecer un
-                    entorno innovador donde puedes llevar a cabo reparaciones y modificaciones en dispositivos
-                    informáticos de
-                    manera eficiente y cómoda.
-                  </p>
+                    At ITech, we are committed to providing a unique and specialized space for all technology enthusiasts and IT professionals. 
+                    We take pride in offering an innovative environment where you can carry out repairs and modifications to computer devices efficiently and comfortably.
+                </p>
+                
                 </div>
                 <div class="col-lg-4">
                   <img src="./assets/images/index_boxes.jpg" class="img-fluid" alt="">
@@ -227,7 +224,7 @@
         <div class="container chasis_store">
             <div class="row p-3">
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                    <h2>CHASIS:</h2>
+                  <h2>CHASIS:</h2>
                 </div>
             </div>
             <div class="row p-3 ">
@@ -253,8 +250,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -275,8 +272,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons" id="chasis1">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -297,8 +294,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -329,8 +326,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -351,8 +348,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -373,8 +370,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -407,8 +404,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -429,8 +426,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -451,8 +448,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -492,8 +489,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -514,8 +511,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons" id="chasis1">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -547,8 +544,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -569,8 +566,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -603,8 +600,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -625,8 +622,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -672,8 +669,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -693,8 +690,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons" id="chasis1">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -714,8 +711,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -746,8 +743,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -768,8 +765,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -790,8 +787,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -833,8 +830,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -855,8 +852,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons" id="chasis1">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -886,8 +883,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -907,8 +904,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -948,8 +945,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -970,8 +967,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons" id="chasis1">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -992,8 +989,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1032,8 +1029,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1053,8 +1050,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons" id="chasis1">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1074,8 +1071,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1105,8 +1102,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1126,8 +1123,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1147,8 +1144,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1191,8 +1188,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1213,8 +1210,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons" id="chasis1">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1235,8 +1232,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1267,8 +1264,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1289,8 +1286,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1311,8 +1308,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1343,8 +1340,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1365,8 +1362,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons" id="chasis1">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1387,8 +1384,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1425,8 +1422,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1446,8 +1443,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons" id="chasis1">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1467,8 +1464,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1508,8 +1505,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1530,8 +1527,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons" id="chasis1">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1552,8 +1549,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1584,8 +1581,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1606,8 +1603,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1628,8 +1625,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1660,8 +1657,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1682,8 +1679,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons" id="chasis1">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1704,8 +1701,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1743,8 +1740,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1765,8 +1762,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons" id="chasis1">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1787,8 +1784,8 @@
                                         <br>
                                         <br>
                                     <div class="gorup-buttons">
-                                        <a class="button-link btn btn-primary incrementa" href="#">Agregar</a>
-                                        <a class="button-link btn btn-secondary disminuye" href="#">Quitar</a>
+                                        <a class="button-link btn btn-primary incrementa" href="#">Add</a>
+                                        <a class="button-link btn btn-secondary disminuye" href="#">Quit</a>
                                     </div>
                                 </div>
                             </div>
@@ -1805,102 +1802,76 @@
 
     <section id="courses" style="display: none;">
       <div class="container mt-5">
-        <h1 class="h1 mb-4">Cursos</h1>
-        <p class="lead">
-          ¡Bienvenido a iTech Learning Center - Tu Puerta de Entrada a la Tecnología del Futuro!
-          En iTech, estamos comprometidos con la formación de vanguardia que impulsa el crecimiento y la innovación en
-          el
-          mundo de la tecnología.
-          Nuestro Learning Center está diseñado para empresas y particulares que buscan sobresalir en un entorno
-          digital
-          en
-          constante evolución.
-          Descubre un mundo de oportunidades de aprendizaje centradas en tecnologías punteras como
-        </p>
-      </div>
+        <h1 class="h1 mb-4">Courses</h1>
+    <p class="lead">
+        Welcome to iTech Learning Center - Your Gateway to the Technology of the Future!
+        At iTech, we are committed to cutting-edge training that drives growth and innovation in the ever-evolving world of technology.
+        Our Learning Center is designed for both businesses and individuals looking to excel in a constantly changing digital environment.
+        Explore a world of learning opportunities centered around cutting-edge technologies like
+    </p>
+</div>
 
+<h1 class="text-center mb-5 display-4">iTech Learning Center Course Catalog</h1>
 
-
-      <h1 class="text-center mb-5 display-4">Catálogo de Cursos iTech Learning Center</h1>
-
-      <div class="row mx-2">
-        <div class="col-lg-6">
-          <div class="card mb-4 bg-light">
+<div class="row mx-2">
+    <div class="col-lg-6">
+        <div class="card mb-4 bg-light">
             <div class="card-body">
-              <img src="assets/images/kubernetes.png" alt="Imagen del curso" class="float-start me-3" width="150"
-                height="150">
-              <h2 class="card-title">Maestría en Kubernetes</h2>
-              <p class="card-text">Sumérgete en el ecosistema de Kubernetes y aprende a orquestar contenedores para
-                optimizar el despliegue de aplicaciones. Desde la configuración hasta la escalabilidad, este curso te
-                preparará para liderar en la era de los contenedores.</p>
-              <a href="#" class="btn btn-primary">Ver curso</a>
+                <img src="assets/images/kubernetes.png" alt="Course Image" class="float-start me-3" width="150" height="150">
+                <h2 class="card-title">Master's in Kubernetes</h2>
+                <p class="card-text">Immerse yourself in the Kubernetes ecosystem and learn to orchestrate containers to optimize application deployment. From configuration to scalability, this course will prepare you to lead in the era of containers.</p>
+                <a href="#" class="btn btn-primary">View Course</a>
             </div>
-          </div>
         </div>
+    </div>
 
-
-        <div class="col-lg-6">
-          <div class="card mb-4 bg-light">
+    <div class="col-lg-6">
+        <div class="card mb-4 bg-light">
             <div class="card-body">
-              <img src="assets/images/grafana.png" alt="Imagen del curso" class="float-start me-3" width="150"
-                height="150">
-              <h2 class="card-title">Monitorización y Análisis Avanzado</h2>
-              <p class="card-text">Adquiere habilidades avanzadas en la monitorización de sistemas complejos. Explora
-                herramientas líderes en la industria y aprende a interpretar datos para mejorar el rendimiento y la
-                eficiencia de tu infraestructura.</p>
-              <a href="#" class="btn btn-primary">Ver curso</a>
+                <img src="assets/images/grafana.png" alt="Course Image" class="float-start me-3" width="150" height="150">
+                <h2 class="card-title">Advanced Monitoring and Analysis</h2>
+                <p class="card-text">Gain advanced skills in monitoring complex systems. Explore industry-leading tools and learn to interpret data to improve the performance and efficiency of your infrastructure.</p>
+                <a href="#" class="btn btn-primary">View Course</a>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+</div>
 
-      <div class="row mx-2">
-        <div class="col-lg-6">
-          <div class="card mb-4 bg-light">
+<div class="row mx-2">
+    <div class="col-lg-6">
+        <div class="card mb-4 bg-light">
             <div class="card-body">
-              <img src="assets/images/bases.png" alt="Imagen del curso" class="float-start me-3" width="150"
-                height="150">
-              <h2 class="card-title">Gestión de Bases de Datos Distribuidas</h2>
-              <p class="card-text">Descubre las bases de datos modernas y su gestión eficiente en entornos
-                distribuidos.
-                Desde NoSQL hasta nuevas tecnologías, este curso te proporcionará las habilidades necesarias para
-                gestionar
-                grandes conjuntos de datos.</p>
-              <a href="#" class="btn btn-primary">Ver curso</a>
+                <img src="assets/images/bases.png" alt="Course Image" class="float-start me-3" width="150" height="150">
+                <h2 class="card-title">Distributed Database Management</h2>
+                <p class="card-text">Discover modern databases and their efficient management in distributed environments. From NoSQL to new technologies, this course will provide you with the skills needed to manage large datasets.</p>
+                <a href="#" class="btn btn-primary">View Course</a>
             </div>
-          </div>
         </div>
+    </div>
 
-        <div class="col-lg-6">
-          <div class="card mb-4 bg-light">
+    <div class="col-lg-6">
+        <div class="card mb-4 bg-light">
             <div class="card-body">
-              <img src="assets/images/devops.avif" alt="Imagen del curso" class="float-start me-3" width="150"
-                height="150">
-              <h2 class="card-title">DevOps: Integración Continua y Despliegue Continuo (CI/CD)</h2>
-              <p class="card-text">Domina las prácticas de DevOps con enfoque en CI/CD. Aprende a automatizar procesos
-                para
-                lograr entregas más rápidas y confiables. Impulsa la colaboración entre equipos de desarrollo y
-                operaciones.
-              </p>
-              <a href="#" class="btn btn-primary">Ver curso</a>
+                <img src="assets/images/devops.avif" alt="Course Image" class="float-start me-3" width="150" height="150">
+                <h2 class="card-title">DevOps: Continuous Integration and Continuous Deployment (CI/CD)</h2>
+                <p class="card-text">Master DevOps practices with a focus on CI/CD. Learn to automate processes for faster and more reliable deliveries. Boost collaboration between development and operations teams.</p>
+                <a href="#" class="btn btn-primary">View Course</a>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+</div>
 
-      <div class="row mx-2">
-        <div class="col-lg-6">
-          <div class="card mb-4 bg-light">
+<div class="row mx-2">
+    <div class="col-lg-6">
+        <div class="card mb-4 bg-light">
             <div class="card-body">
-              <img src="assets/images/nube.jpg" alt="Imagen del curso" class="float-start me-3" width="150"
-                height="150">
-              <h2 class="card-title">Seguridad en la Nube y Protección de Datos</h2>
-              <p class="card-text">Mantén tus sistemas seguros en el entorno digital actual. Explora estrategias de
-                seguridad en la nube, protección de datos y mejores prácticas para mitigar amenazas cibernéticas.</p>
-              <a href="#" class="btn btn-primary">Ver curso</a>
+                <img src="assets/images/nube.jpg" alt="Course Image" class="float-start me-3" width="150" height="150">
+                <h2 class="card-title">Cloud Security and Data Protection</h2>
+                <p class="card-text">Keep your systems secure in today's digital environment. Explore cloud security strategies, data protection, and best practices to mitigate cyber threats.</p>
+                <a href="#" class="btn btn-primary">View Course</a>
             </div>
-          </div>
         </div>
+    </div>
       </div>
       <br>
       <br>
@@ -1910,103 +1881,97 @@
     <section id="boxes" style="display: none;">
       <div class=" mx-3 my-4">
         <div class="container">
-          <h1>Como funciona</h1>
+          <h1>How It Works</h1>
           <p>
-            Reserva tu Box: Visita nuestro sitio web y selecciona el box que mejor se adapte a tus necesidades y el
-            tiempo
-            que
-            deseas reservar
-
-            Accede a las Herramientas: Una vez que llegues a nuestras instalaciones, tendrás acceso a todas las
-            herramientas
-            y
-            equipos necesarios dentro de tu box.
-
-            Trabaja en tu Proyecto: Ponte manos a la obra y trabaja en tu proyecto con tranquilidad. Si encuentras algún
-            problema o necesitas ayuda, nuestro personal estará encantado de asistirte.
-
-            En ITech, estamos comprometidos a proporcionar un entorno acogedor y colaborativo para que puedas llevar a
-            cabo
-            tus proyectos tecnológicos de manera exitosa. Agradecemos tu apoyo durante este primer año y esperamos
-            seguir
-            siendo tu destino preferido para el bricolaje informático y las experiencias tecnológicas inolvidables.
-
-            ¡Gracias por ser parte de nuestra comunidad!
+            Reserve your Box: Visit our website and select the box that best suits your needs and the time you want to
+            reserve.
+    
+            Access the Tools: Once you arrive at our facilities, you will have access to all the tools and equipment
+            necessary
+            within your box.
+    
+            Work on Your Project: Get to work and work on your project with peace of mind. If you encounter any problems or
+            need
+            assistance, our staff will be happy to help.
+    
+            At ITech, we are committed to providing a welcoming and collaborative environment for you to successfully
+            undertake
+            your technological projects. We appreciate your support during this first year and look forward to continuing to
+            be
+            your preferred destination for computer DIY and unforgettable technological experiences.
+    
+            Thank you for being part of our community!
           </p>
           <br>
-          <h1>Donde nos encontramos</h1>
+          <h1>Where We Are</h1>
           <div class="content">
             <p>
-              En Itech, hemos experimentado un crecimiento significativo en nuestro ámbito provincial, estableciendo
-              diversas
-              ubicaciones que cuentan con espacios especialmente diseñados. En el mapa que se presenta a continuación,
-              podrán
-              apreciar visualmente nuestras distintas localizaciones, identificando claramente los boxes disponibles en
-              cada
-              una
-              de ellas y marcada la sede principal que se encuentra en Pamplona.
+              At Itech, we have experienced significant growth in our provincial scope, establishing various locations with
+              specially designed spaces. In the map below, you can visually appreciate our different locations,
+              clearly
+              identifying the available boxes in each of them and marking the main headquarters located in Pamplona.
             </p>
             <img id="mapaboxes" src="./assets/images/navarra.gif" alt="mapaboxes">
           </div>
-
+    
           <div class="container">
-            <h2 class="text-center mb-4">Horario Semanal</h2>
+            <h2 class="text-center mb-4">Weekly Schedule</h2>
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th scope="col">Día</th>
-                  <th scope="col">Horario Mañana</th>
-                  <th scope="col">Horario Tarde</th>
+                  <th scope="col">Day</th>
+                  <th scope="col">Morning Schedule</th>
+                  <th scope="col">Afternoon Schedule</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">Lunes</th>
-                  <td>9:00 - 14:00</td>
-                  <td>17:00 - 20:00</td>
+                  <th scope="row">Monday</th>
+                  <td>9:00 AM - 2:00 PM</td>
+                  <td>5:00 PM - 8:00 PM</td>
                 </tr>
                 <tr>
-                  <th scope="row">Martes</th>
-                  <td>9:00 - 14:00</td>
-                  <td>17:00 - 20:00</td>
+                  <th scope="row">Tuesday</th>
+                  <td>9:00 AM - 2:00 PM</td>
+                  <td>5:00 PM - 8:00 PM</td>
                 </tr>
                 <tr>
-                  <th scope="row">Miércoles</th>
-                  <td>9:00 - 14:00</td>
-                  <td>17:00 - 20:00</td>
+                  <th scope="row">Wednesday</th>
+                  <td>9:00 AM - 2:00 PM</td>
+                  <td>5:00 PM - 8:00 PM</td>
                 </tr>
                 <tr>
-                  <th scope="row">Jueves</th>
-                  <td>9:00 - 14:00</td>
-                  <td>17:00 - 20:00</td>
+                  <th scope="row">Thursday</th>
+                  <td>9:00 AM - 2:00 PM</td>
+                  <td>5:00 PM - 8:00 PM</td>
                 </tr>
                 <tr>
-                  <th scope="row">Viernes</th>
-                  <td>9:00 - 14:00</td>
-                  <td>17:00 - 20:00</td>
+                  <th scope="row">Friday</th>
+                  <td>9:00 AM - 2:00 PM</td>
+                  <td>5:00 PM - 8:00 PM</td>
                 </tr>
                 <tr>
-                  <th scope="row">Sábado</th>
-                  <td>9:00 - 14:00</td>
-                  <td>Cerrado</td>
+                  <th scope="row">Saturday</th>
+                  <td>9:00 AM - 2:00 PM</td>
+                  <td>Closed</td>
                 </tr>
                 <tr>
-                  <th scope="row">Domingo</th>
-                  <td>Cerrado</td>
-                  <td>Cerrado</td>
+                  <th scope="row">Sunday</th>
+                  <td>Closed</td>
+                  <td>Closed</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
         <div class="container mt-4">
-          <h2 class="text-center">Formulario de Reserva de Boxes</h2>
-
+          <h2 class="text-center">Box Reservation Form</h2>
+    
           <form>
             <div class="form-group">
-              <label for="localidad">Localidad:</label>
-              <select class="form-control" id="localidad" name="localidad">
-                <option value="">--Seleciona localidad--</option>
+              <label for="locality">Locality:</label>
+              <select class="form-control" id="locality" name="locality">
+                <option value="">--Select locality--</option>
                 <option value="Pamplona">Pamplona</option>
                 <option value="Sanguesa">Sanguesa</option>
                 <option value="Tafalla">Tafalla</option>
@@ -2014,66 +1979,66 @@
                 <option value="Tudela">Tudela</option>
               </select>
             </div>
-
+    
             <div class="form-group">
-              <label for="numeroBox">Número del Box:</label>
-              <select class="form-control" id="numeroBox" name="numeroBox">
-                <option value="">--Selecciona un número --</option>
+              <label for="boxNumber">Box Number:</label>
+              <select class="form-control" id="boxNumber" name="boxNumber">
+                <option value="">--Select a number--</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
               </select>
             </div>
-
+    
             <div class="form-group">
-              <label for="diaSemana">Día de la Semana:</label>
-              <select class="form-control" id="diaSemana" name="diaSemana">
-                <option value="">--Selecciona un dia de la semana --</option>
-                <option value="Lunes">Lunes</option>
-                <option value="Martes">Martes</option>
-                <option value="Miércoles">Miércoles</option>
-                <option value="Jueves">Jueves</option>
-                <option value="Viernes">Viernes</option>
-                <option value="Sábado">Sábado</option>
+              <label for="dayOfWeek">Day of the Week:</label>
+              <select class="form-control" id="dayOfWeek" name="dayOfWeek">
+                <option value="">--Select a day of the week--</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
               </select>
             </div>
-
+    
             <div class="form-group">
-              <label for="horaInicio">Hora de Inicio:</label>
-              <select class="form-control" id="horaInicio" name="horaInicio">
-                <option value="">--Selecciona una hora de inicio --</option>
-                <option value="09:00">9:00</option>
-                <option value="10:00">10:00</option>
-                <option value="11:00">11:00</option>
-                <option value="12:00">12:00</option>
-                <option value="13:00">13:00</option>
-                <option value="14:00">14:00</option>
-                <option value="17:00">17:00</option>
-                <option value="18:00">18:00</option>
-                <option value="19:00">19:00</option>
-                <option value="20:00">20:00</option>
+              <label for="startTime">Start Time:</label>
+              <select class="form-control" id="startTime" name="startTime">
+                <option value="">--Select a start time--</option>
+                <option value="09:00">9:00 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="13:00">1:00 PM</option>
+                <option value="14:00">2:00 PM</option>
+                <option value="17:00">5:00 PM</option>
+                <option value="18:00">6:00 PM</option>
+                <option value="19:00">7:00 PM</option>
+                <option value="20:00">8:00 PM</option>
               </select>
             </div>
-
+    
             <div class="form-group">
-              <label for="horaFin">Hora de Finalización:</label>
-              <select class="form-control" id="horaFin" name="horaFin">
-                <option value="">--Selecciona una hora de fin --</option>
-                <option value="09:00">9:00</option>
-                <option value="10:00">10:00</option>
-                <option value="11:00">11:00</option>
-                <option value="12:00">12:00</option>
-                <option value="13:00">13:00</option>
-                <option value="14:00">14:00</option>
-                <option value="17:00">17:00</option>
-                <option value="18:00">18:00</option>
-                <option value="19:00">19:00</option>
-                <option value="20:00">20:00</option>
+              <label for="endTime">End Time:</label>
+              <select class="form-control" id="endTime" name="endTime">
+                <option value="">--Select an end time--</option>
+                <option value="09:00">9:00 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="13:00">1:00 PM</option>
+                <option value="14:00">2:00 PM</option>
+                <option value="17:00">5:00 PM</option>
+                <option value="18:00">6:00 PM</option>
+                <option value="19:00">7:00 PM</option>
+                <option value="20:00">8:00 PM</option>
               </select>
             </div>
-
-            <button type="submit" class="btn btn-primary">Reservar</button>
+    
+            <button type="submit" class="btn btn-primary">Reserve</button>
           </form>
         </div>
 
@@ -2140,39 +2105,40 @@
       <div class="container">
         <div class="row p-5 ">
           <div class=" col-lg-8 my-col-h col-md-6 col-sm-12">
-            <p class="h2 section">¿Quienes somos?</p>
+            <p class="h2 section">Who are we?</p>
             <p>
-              ITech es una empresa dedicada principalmente a la informática cubriendo ámbitos como la educación en el
-              tema, la venta de componentes necesarios y la disposición de espacios especializados para realizar ciertas
-              acciones. Esta empresa surge de la necesidad de reducir la brecha digital y ayudar en el avance de la
-              sociedad mediante la educación de la gente, proveer de componentes o dispositivos a aquellos que lo
-              necesiten y ofrecer espacios concretos donde la gente pueda realizar mejoras, actualizar componentes,
-              reparar dispositivos…</p>
+              ITech is a company mainly dedicated to information technology, covering areas such as education on the
+              subject, the sale of necessary components, and the provision of specialized spaces for certain actions.
+              This company arises from the need to reduce the digital divide and help advance society through people's
+              education, provide components or devices to those who need them, and offer specific spaces where people
+              can make improvements, update components, repair devices...
+            </p>
           </div>
           <div class="col-lg-4 my-col-h col-md-6 col-sm-12">
-            <img class="rounded mx-auto d-block my-img-size" src="./assets/images/icono_itech.png" alt="quienes-somos">
+            <img class="rounded mx-auto d-block my-img-size" src="./assets/images/icono_itech.png" alt="who-we-are">
           </div>
         </div>
 
         <div class="row p-5 bg-light">
 
           <div class="col-lg-4 my-col-h col-md-6 col-sm-12">
-            <img class="w-30 h-50 rounded mx-auto d-block my-img-size" src="./assets/images/mision.png"
+            <img class="w-30 h-50 rounded mx-auto d-block my-img-size" src="./assets/images/mission.png"
               alt="msi laptop">
           </div>
           <div class="col col-lg-8 my-col-h col-md-6 col-sm-12">
-            <p class="h2 section">Misión</p>
+            <p class="h2 section">Mission</p>
             <p>
-              Nuestra misión es ayudar a la comunidad educando a cualquier persona y permitir la comunicación del
-              aprendizaje ofreciendo zonas especializadas y los componentes necesarios.</p>
+              Our mission is to help the community by educating anyone and enabling the communication of learning by
+              offering specialized areas and the necessary components.
+            </p>
           </div>
         </div>
         <div class="row p-5 ">
           <div class=" col-lg-8 my-col-h col-md-6 col-sm-12">
-            <p class="h2 section">Visión</p>
+            <p class="h2 section">Vision</p>
             <p>
-              Tenemos el objetivo de ser referentes en la reducción de la brecha digital y la innovación tecnológica en
-              Navarra</p>
+              We aim to be leaders in reducing the digital divide and technological innovation in Navarra.
+            </p>
           </div>
           <div class="col-lg-4 my-col-h col-md-6 col-sm-12">
             <img class="w-30 h-50 rounded mx-auto d-block my-img-size" src="./assets/images/vision.jpg"
@@ -2182,60 +2148,54 @@
         <div class="row p-5 bg-light">
 
           <div class="col-lg-4 my-col-h col-md-6 col-sm-12">
-            <img class="w-30 h-50 rounded mx-auto d-block my-img-size" src="./assets/images/valores.jpg"
+            <img class="w-30 h-50 rounded mx-auto d-block my-img-size" src="./assets/images/values.jpg"
               alt="msi laptop">
           </div>
           <div class="col col-lg-8 my-col-h col-md-6 col-sm-12">
-            <p class="h2 section">Valores</p>
+            <p class="h2 section">Values</p>
             <p>
-            <ul>
-              <li>Estar comprometidos a dar una asistencia técnica y una enseñanza informática de manera efectiva y
-                llevadera y ayudando al medio ambiente reacondicionando los componentes viejos y dándoles otra vida.
-              </li>
-
-              <li>Pasión por la tecnología</li>
-
-              <li>Enseñanza efectiva, autodidacta y para todos</li>
-
-              <li>Reducción del impacto medioambiental (4R)</li>
-
-              <li>Asistencia en todo momento</li>
-
-            </ul>
+              <ul>
+                <li>Committed to providing effective and bearable technical assistance and computer education while
+                  helping the environment by refurbishing old components and giving them a new life.</li>
+                <li>Passion for technology</li>
+                <li>Effective, self-taught, and inclusive education</li>
+                <li>Reduction of environmental impact (4R)</li>
+                <li>Assistance at all times</li>
+              </ul>
             </p>
           </div>
         </div>
         <div class="row" id="whoarewe">
           <div class="col-lg-12 col-md-12 col-sm-12">
-            <p class="h2 section">Nuestro equipo</p>
+            <p class="h2 section">Our Team</p>
           </div>
           <div class="col-lg-12 col-md-12 col-sm-12">
-            <p id="organigram"> <img src="./assets/images/organigram.png" alt="oeganigrama"> </p>
+            <p id="organigram"> <img src="./assets/images/organigram.png" alt="organigram"> </p>
           </div>
           <div>
             <ul id="team">
               <li class="h4">Rubén Hermoso de Mendoza</li>
               <ul id="chairman">
-                <li>Presidente, CEO de la compañía y encargado del departamento de cursos.</li>
+                <li>President, CEO of the company, and head of the courses department.</li>
               </ul>
               <br>
-              <li class="h4">Eduard Ionut Mizdran</li>
+              <li class="h4">Eduard Mizdran</li>
               <ul>
-                <li>Director de marketing y gestión de redes sociales.</li>
+                <li>Marketing Director and Social Media Management.</li>
               </ul>
               <br>
-              <li class="h4">Ibrahim Bah Diallo</li>
+              <li class="h4">Ibra</li>
               <ul>
-                <li>Director de marketing y gestión de redes sociales.</li>
+                <li>Marketing Director and Social Media Management.</li>
               </ul>
               <li class="h4">Daniel Goñi</li>
               <ul>
-                <li>Director del departamento de boxes.</li>
+                <li>Director of the boxes department.</li>
               </ul>
               <br>
               <li class="h4">Iván Olcoz</li>
               <ul>
-                <li>Director del departamento de gestión y ventas.</li>
+                <li>Director of the management and sales department.</li>
               </ul>
               <br>
             </ul>
@@ -2251,17 +2211,17 @@
     <section id="login" style="display: none;">
       <div class="container align-items-center col-4 py-5">
 
-        <h2>Bienvenido</h2>
+        <h2>Welcome</h2>
         <form class="form-center border p-3 bg-light">
           <div class="form-group mb-3">
-            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+            <label for="exampleInputEmail1" class="form-label">E-mail</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           </div>
           <div class="form-group mb-3">
-            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <label for="exampleInputPassword1" class="form-label">Password</label>
             <input type="password" class="form-control" id="exampleInputPassword1">
           </div>
-          <button type="submit" class="btn btn-secondary">Entrar</button>
+          <button type="submit" class="btn btn-secondary">Log in</button>
         </form>
       </div>
     </section>
@@ -2269,29 +2229,29 @@
     <section id="sign_in" style="display: none;">
       <div class="container align-items-center col-4 py-5">
 
-        <h2>Registrate</h2>
+        <h2>Sign Up</h2>
         <form class="form-center border p-3 bg-light">
-          <div class="form-group mb-3">
-            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          </div>
-          <div class="form-group mb-3">
-            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="form-group mb-3">
-            <label for="exampleInputPassword2" class="form-label">Repite la contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword2">
-          </div>
-          <div class="m-3">
-            <label for="nacimiento"> Fecha de nacimiento:</label>
-            <input type="date" name="nacimiento" id="nacimiento">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Acepto los terminos y condiciones</label>
-          </div>
-          <button type="submit" class="btn btn-secondary">Registrarse</button>
+            <div class="form-group mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group mb-3">
+                <label for="exampleInputPassword2" class="form-label">Repeat Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword2">
+            </div>
+            <div class="m-3">
+                <label for="nacimiento">Date of Birth:</label>
+                <input type="date" name="nacimiento" id="nacimiento">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">I accept the terms and conditions</label>
+            </div>
+            <button type="submit" class="btn btn-secondary">Sign Up</button>
         </form>
       </div>
       <br>
