@@ -1,0 +1,9 @@
+#organigram {
+    text-align: center !important;
+}
+#team, #team ul{
+    list-style: none !important;
+}
+#whoarewe .section{
+    text-align: center;
+}
