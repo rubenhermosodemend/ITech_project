@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>ITech home page</title>
-  <link rel="stylesheet" href="./assets/styles/index.css">
-  <link rel="stylesheet" href="./assets/styles/boxes.css">
-  <link rel="stylesheet" href="./assets/styles/aourselves.css">
-  <link rel="stylesheet" href="./assets/styles/store.css">
-  <link rel="icon" type="image/x-icon" href="./assets/images/icono_itech.png">
-</head>
-
+<?php
+include './paginas/header.php';
+session_start();
+?>
 <body>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
@@ -40,40 +27,49 @@
                   Tienda
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" id="alllink" href="#">Todos</a></li>
-                  <li><a class="dropdown-item" id="processorlink" href="#">Procesadores</a></li>
-                  <li><a class="dropdown-item" id="graphiclink" href="#">Tarjetas gráficas</a></li>
+                  <li><a class="dropdown-item" id="alllink" href="#">All</a></li>
+                  <li><a class="dropdown-item" id="processorlink" href="#">Processors</a></li>
+                  <li><a class="dropdown-item" id="graphiclink" href="#">Graphics cards</a></li>
                   <li><a class="dropdown-item" id="ramlink" href="#">RAM</a></li>
-                  <li><a class="dropdown-item" id="coolinglink" href="#">Refrigeración</a></li>
-                  <li><a class="dropdown-item" id="storagelink" href="#">Almacenamiento</a></li>
+                  <li><a class="dropdown-item" id="coolinglink" href="#">Cooling systems</a></li>
+                  <li><a class="dropdown-item" id="storagelink" href="#">Storage</a></li>
                   <li><a class="dropdown-item" id="chasislink" href="#">Chasis</a></li>
-                  <li><a class="dropdown-item" id="powerlink" href="#">Fuentes de alimentación</a></li>
-                  <li><a class="dropdown-item" id="screenlink" href="#">Monitores</a></li>
-                  <li><a class="dropdown-item" id="peripheralink" href="#">Periféricos</a></li>
-                  <li><a class="dropdown-item" id="motherboardlink" href="#">Placas Base</a></li>
+                  <li><a class="dropdown-item" id="powerlink" href="#">Power supply</a></li>
+                  <li><a class="dropdown-item" id="screenlink" href="#">Monitors</a></li>
+                  <li><a class="dropdown-item" id="peripheralink" href="#">Peripherals</a></li>
+                  <li><a class="dropdown-item" id="motherboardlink" href="#">Motherboards</a></li>
                 </ul>
   
               </li>
               <li class="nav-item p-4  ">
-                <a class="nav-link icon-link-hover cursos fnavbar" href="#" onclick="showSection('courses')">Cursos</a>
+                <a class="nav-link icon-link-hover cursos fnavbar" href="#" onclick="showSection('courses')">Courses</a>
               </li>
               <li class="nav-item p-4  ">
                 <a class="nav-link icon-link-hover boxes fnavbar" href="#" onclick="showSection('boxes')">Boxes</a>
               </li>
               <li class="nav-item p-4  ">
                 <a class="nav-link icon-link-hover contact fnavbar" href="#"
-                  onclick="showSection('contact')">Contáctanos</a>
+                  onclick="showSection('contact')">Contact us</a>
               </li>
               <li class="nav-item p-4  ">
-                <a class="nav-link icon-link-hover about_us" href="#" onclick="showSection('about_ourselves')">Sobre
-                  nosotros</a>
+                <a class="nav-link icon-link-hover about_us" href="#" onclick="showSection('about_ourselves')">About us</a>
               </li>
-              <li class="nav-item p-4  ">
-                <a class="nav-link icon-link-hover login" href="#" onclick="showSection('login')">Log in</a>
-              </li>
-              <li class="nav-item p-4  ">
-                <a class="nav-link icon-link-hover signin" href="#" onclick="showSection('sign_in')">Sign in</a>
-              </li>
+            <?php
+            if (isset($_SESSION['user'])){
+               echo '<li class="nav-item p-4  ">';
+               echo '<a class="nav-link icon-link-hover login" href="./paginas/logout_en.php" ">Log out</a>';
+               echo '</li>';
+               echo '<li class="nav-item p-4  ">';
+               echo '<p style="font-size: 15px ">i am ';
+               echo $_SESSION['user'];
+               echo '</p>';
+               echo '</li>';
+             }else{
+               echo '<li class="nav-item p-4  ">';
+               echo '<a class="nav-link icon-link-hover login" href="./paginas/login_en.php" ">Log in</a>';
+               echo '</li>';
+             }
+            ?>
               <li class="nav-item p-4">
                 <div class="btn-group px-2">
                     <button class="btn btn-secondary btn-lg dropdown-toggle btn-sm" id="reductedbutton"
@@ -2208,57 +2204,6 @@
       <br>
       <br>
     </section>
-    <section id="login" style="display: none;">
-      <div class="container align-items-center col-4 py-5">
-
-        <h2>Welcome</h2>
-        <form class="form-center border p-3 bg-light">
-          <div class="form-group mb-3">
-            <label for="exampleInputEmail1" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          </div>
-          <div class="form-group mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <button type="submit" class="btn btn-secondary">Log in</button>
-        </form>
-      </div>
-    </section>
-
-    <section id="sign_in" style="display: none;">
-      <div class="container align-items-center col-4 py-5">
-
-        <h2>Sign Up</h2>
-        <form class="form-center border p-3 bg-light">
-            <div class="form-group mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="form-group mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="form-group mb-3">
-                <label for="exampleInputPassword2" class="form-label">Repeat Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword2">
-            </div>
-            <div class="m-3">
-                <label for="nacimiento">Date of Birth:</label>
-                <input type="date" name="nacimiento" id="nacimiento">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">I accept the terms and conditions</label>
-            </div>
-            <button type="submit" class="btn btn-secondary">Sign Up</button>
-        </form>
-      </div>
-      <br>
-      <br>
-      <br>
-
-    </section>
   </main>
 
 
@@ -2273,14 +2218,5 @@
 
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-  <script src="./assets/js/indexscript.js"></script>
-  <script src="./assets/js/form-boxes.js"></script>
-  <script src="./assets/js/cart.js"></script>
-  <script src="./assets/js/store.js"></script>
-</body>
-
-</html>
+<?php
+include './paginas/footer.php';
